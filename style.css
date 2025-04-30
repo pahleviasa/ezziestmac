@@ -1,0 +1,126 @@
+/* Global Styles */
+:root {
+  --clr-bg: #f7f7f7;
+  --clr-primary: #007bff;
+  --clr-text: #333;
+  --clr-card: #fff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--clr-bg);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+nav {
+  background: var(--clr-primary);
+  padding: 20px 0;
+  color: white;
+}
+
+nav .logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .nav-links li {
+  margin-left: 30px;
+}
+
+nav .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 0;
+  background: var(--clr-primary);
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero .cta {
+  background-color: white;
+  color: var(--clr-primary);
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.fitur-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.fitur-item {
+  background: var(--clr-card);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.testimoni .testi-box {
+  background: var(--clr-card);
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.testimoni cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.accordion .item { margin-bottom: 10px; }
+.accordion .q {
+  width: 100%; background: var(--clr-card); color: var(--clr-text);
+  border: none; padding: 15px; text-align: left; cursor: pointer;
+  border-radius: 5px;
+}
+.accordion .a {
+  max-height: 0; overflow: hidden;
+  background: var(--clr-bg); transition: max-height 0.3s ease;
+  padding: 0 15px;
+}
+.accordion .a p { padding: 10px 0; }
+.accordion .item.open .a { max-height: 200px; }
+
+#to-top {
+  position: fixed; bottom: 20px; right: 20px;
+  background: var(--clr-primary); color: #fff;
+  padding: 10px; border-radius: 50%;
+  display: none; cursor: pointer;
+}
+
+#to-top.show { display: block; }

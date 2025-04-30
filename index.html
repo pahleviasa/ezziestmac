@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EzziestMac - Macro No Recoil</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="image/ezziestmac.png" type="image/png">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <header>
+    <nav>
+      <div class="container nav-container">
+        <h1 class="logo">EzziestMac</h1>
+        <ul class="nav-links">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#fitur">Fitur</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero container">
+      <img src="image/ezziestmac.png" alt="Logo EzziestMac" class="hero-img">
+      <h2>Macro Anti Recoil Paling Stabil</h2>
+      <p>Optimalkan aimmu di game favorit dengan macro buatan EzziestMac.</p>
+      <a href="#kontak" class="cta">Beli Sekarang</a>
+    </div>
+  </header>
+
+  <section id="fitur" class="fitur container">
+    <h3>Kenapa Pilih EzziestMac?</h3>
+    <div class="fitur-grid">
+      <div class="fitur-item">✅ No Recoil 99%</div>
+      <div class="fitur-item">🎮 Support semua mouse gaming</div>
+      <div class="fitur-item">⚙️ Custom setting per game</div>
+      <div class="fitur-item">📚 Video tutorial lengkap</div>
+      <div class="fitur-item">🔒 Aman & tidak terdeteksi</div>
+      <div class="fitur-item">💬 Garansi support 24 jam</div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section id="faq" class="container">
+    <h3>FAQ</h3>
+    <div class="accordion">
+      <div class="item">
+        <button class="q">Bagaimana cara install macro ini?</button>
+        <div class="a">
+          <p>Download file, jalankan installer, dan pilih profil mouse kamu.</p>
+        </div>
+      </div>
+      <div class="item">
+        <button class="q">Apakah terdeteksi oleh anti-cheat?</button>
+        <div class="a">
+          <p>EzziestMac kami rancang supaya undetected di game populer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimoni container">
+    <h3>Apa Kata Mereka?</h3>
+    <div class="testi-box">
+      <p>"Main makin enak, recoil beneran ilang! Ez banget aimnya."</p>
+      <cite>— Kevin, Gamer PUBG</cite>
+    </div>
+    <div class="testi-box">
+      <p>"EzziestMac beneran ngebantu, recoil jadi stabil 100%!"</p>
+      <cite>— Dika, CODM Player</cite>
+    </div>
+  </section>
+
+  <section class="video container">
+    <h3>Demo Script No Recoil</h3>
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ezziestmac/video/7489226698865528065" data-video-id="7489226698865528065" style="max-width: 605px;min-width: 325px;">
+      <section>
+        <a target="_blank" title="@ezziestmac" href="https://www.tiktok.com/@ezziestmac">@ezziestmac</a>
+        <p>NEW UPDATE SCRIPT NO RECOIL 80-90% C++, SAFE 100%, WORK ALL MOUSE. GOT 1-9 PRESET FOR DIFFERENT WEAPON. ORDER NOW #pubg #pubgmobile #pubgsteam #script</p>
+        <a target="_blank" title="♬ AURA - Ogryzek" href="https://www.tiktok.com/music/AURA-Ogryzek-7489226698865528065">♬ AURA - Ogryzek</a>
+      </section>
+    </blockquote>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+  </section>
+
+  <section id="kontak" class="kontak container">
+    <h3>Hubungi Kami</h3>
+    <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/ezziestmac" target="_blank">@ezziestmac</a></p>
+    <p><i class="fab fa-tiktok"></i> <a href="https://www.tiktok.com/@ezziestmac" target="_blank">@ezziestmac di TikTok</a></p>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 EzziestMac. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- "Back to Top" Button -->
+  <button id="to-top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- JavaScript -->
+  <script>
+    // Preloader
+    window.addEventListener('load', ()=> {
+      document.getElementById('preloader').style.display = 'none';
+    });
+
+    // Smooth Scroll + Back to Top Button
+    const btn = document.getElementById('to-top');
+    window.addEventListener('scroll', ()=>{
+      if (window.scrollY > 300) btn.classList.add('show');
+      else btn.classList.remove('show');
+    });
+    btn.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+
+    // FAQ Accordion
+    document.querySelectorAll('.accordion .q').forEach(btn => {
+      btn.addEventListener('click', ()=>{
+        const item = btn.parentElement;
+        item.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
